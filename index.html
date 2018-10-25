@@ -7,30 +7,38 @@
 		<script src="script.js"></script>
     </head>
     <body onload="recalculate ();">
-		<h1>Trimps <br> Dimensional Generator <br> Calculator</h1>
+		<h1>Trimps <br \> Dimensional Generator <br \> Calculator</h1>
 		
 		<div id="MainWindow">
 			<!-- INPUTS -->
 			<span class="moreInfo floatLeft" title="Enter your current supply level">(?) Supply level:</span>
-			<input oninput="recalculate ();" id="supplyInput" type="number" value="20" required="required">
-			<br>
+			<input oninput="recalculate ();" id="supplyInput" type="number" value="40" required="required">
+			<br \>
+
+			<span class="moreInfo floatLeft" title="Enter your current capacity level">(?) Capacity level:</span>
+			<input oninput="recalculate ();" id="capacityInput" type="number" value="80" required="required">
+			<br \>
 			
-			<span class="moreInfo floatLeft" title="How many zones do You want to spend in 'Gain Fuel' mode?"\>(?) Fuelling zones:</span>
+			<span class="moreInfo floatLeft" title="How many zones do You want to spend in 'Gain Fuel' mode?">(?) Fuelling zones:</span>
 			<input oninput="recalculate ();" id="fuellingInput" type="number" value="40" required="required">
-			<br>
+			<br \>
 			
 			<span class="moreInfo floatLeft" title="What is the highest zone you want to gain fuel at?">(?) Fuelling zone limit:</span>
 			<input oninput="recalculate ();" id="limitInput" type="number" value="999" required="required">
-			<br>
+			<br \>
 			
 			<hr>
 			<!-- OUTPUTS -->
 			
 			<span>Start fuelling at zone <span id="minZoneOutput" class="bold">300</span> ('Gain Mi' up until now)</span>
-			<br>
+			<br \>
 			
 			<span>Stop fuelling at zone <span id="maxZoneOutput" class="bold">320</span> (Switch to 'Gain Mi')</span>
-			<br>
+			<br \>
+
+			<span>Set Dimensional Generator storage to <span id="sliderAdjustmentPercent" class="bold">0</span>% <br \>
+				&emsp;&emsp;&emsp;(Click on the slider and tap the left arrow key <span id="sliderAdjustmentTaps" class="bold">0</span> times)</span>
+			<br \>
 		</div>
     </body>
 </html>
